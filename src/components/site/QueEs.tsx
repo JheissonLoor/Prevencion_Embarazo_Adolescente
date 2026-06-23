@@ -1,7 +1,7 @@
 import { QUE_ES_CARDS } from "@/lib/content";
 import { Reveal } from "./Reveal";
 import { SectionTitle, HeartIcon } from "./Decor";
-import teenImg from "@/assets/teen-thinking.svg";
+import teenImg from "@/assets/teen-thinkinh.png";
 
 export function QueEs() {
   return (

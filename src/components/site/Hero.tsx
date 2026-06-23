@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from "motion/react";
 import { ArrowRight, Compass } from "lucide-react";
-import heroImg from "@/assets/hero-teens.svg";
+import heroImg from "@/assets/hero-teens.png";
 import { FLOATING_CHIPS } from "@/lib/content";
 import { Blob, FloatingDecor, HeartIcon, StarIcon } from "./Decor";
 
