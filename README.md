@@ -21,13 +21,10 @@ npm run build
 
 ## Imágenes
 
-`src/assets/hero-teens.svg` y `src/assets/teen-thinking.svg` son **placeholders**.
-Para usar las ilustraciones finales (PNG/JPG):
-
-1. Copia la imagen en `src/assets/` (p. ej. `hero-teens.png`).
-2. Cambia el import en el componente correspondiente
-   (`src/components/site/Hero.tsx` y `src/components/site/QueEs.tsx`)
-   a la nueva extensión, p. ej. `import heroImg from "@/assets/hero-teens.png";`.
+Las ilustraciones del sitio están en `src/assets/`. Para cambiarlas, reemplaza
+el archivo correspondiente (manteniendo el mismo nombre) o sube uno nuevo y
+actualiza el `import` en `src/components/site/Hero.tsx` y
+`src/components/site/QueEs.tsx`.
 
 ## Estructura
 
