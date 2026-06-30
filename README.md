@@ -1,7 +1,7 @@
 # Prevención del Embarazo Adolescente
 
 <p align="center">
-  <img src="src/assets/hero-teens.png" alt="Prevención del Embarazo Adolescente" width="540" />
+  <img src="preview.png" alt="Vista previa del sitio Prevención del Embarazo Adolescente" width="820" />
 </p>
 
 <p align="center">
