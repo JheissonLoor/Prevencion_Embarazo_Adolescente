@@ -6,79 +6,109 @@
 
 <p align="center">
   Sitio web educativo sobre la prevención del embarazo adolescente.<br/>
-  Proyecto académico — Universidad Privada del Norte (UPN), Facultad de Salud, 2026.
+  Proyecto académico de la Universidad Privada del Norte (UPN), Facultad de Salud — 2026.
 </p>
 
 <p align="center">
-  <a href="https://prevencionembarazo-upn.netlify.app/">Ver el sitio en línea</a>
+  <a href="https://prevencionembarazo-upn.netlify.app/"><b>Ver el sitio en línea</b></a>
 </p>
 
-## Demo
+## Tabla de contenidos
 
-Sitio publicado: https://prevencionembarazo-upn.netlify.app/
+- [Descripción](#descripción)
+- [Características](#características)
+- [Tecnologías](#tecnologías)
+- [Requisitos](#requisitos)
+- [Instalación y uso](#instalación-y-uso)
+- [Despliegue](#despliegue)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Edición del contenido](#edición-del-contenido)
+- [Autoría](#autoría)
+- [Licencia](#licencia)
 
 ## Descripción
 
-Sitio web informativo y de orientación sobre la prevención del embarazo adolescente, dirigido a adolescentes y jóvenes. Reúne información clara y verificable sobre salud sexual y reproductiva en un formato accesible y fácil de navegar.
+Aplicación web informativa y de orientación sobre la prevención del embarazo adolescente, dirigida a adolescentes y jóvenes. Centraliza información clara y verificable sobre salud sexual y reproductiva en una interfaz responsiva y accesible.
 
-## Contenido
+Sitio publicado: https://prevencionembarazo-upn.netlify.app/
 
-- Qué es el embarazo adolescente, sus causas y consecuencias.
-- Métodos anticonceptivos y uso correcto del preservativo.
-- Infecciones de transmisión sexual (ITS), mitos y verdades, y consentimiento.
-- Encuesta interactiva para reforzar lo aprendido.
-- Proyecto de vida: una meta personal que se guarda en el navegador.
+## Características
+
+- Información sobre el embarazo adolescente: definición, causas y consecuencias.
+- Métodos anticonceptivos y guía de uso correcto del preservativo.
+- Sección sobre infecciones de transmisión sexual (ITS), mitos y consentimiento.
+- Encuesta interactiva de autoevaluación.
+- Apartado de proyecto de vida con almacenamiento local en el navegador.
 - Recursos de ayuda y preguntas frecuentes.
 
 ## Tecnologías
 
-- React 19 y TypeScript
-- Vite
-- Tailwind CSS v4
-- Motion (animaciones) y Lucide (iconos)
+| Herramienta | Uso |
+| --- | --- |
+| React 19 + TypeScript | Interfaz de usuario |
+| Vite | Entorno de desarrollo y empaquetado |
+| Tailwind CSS v4 | Estilos y diseño |
+| Motion | Animaciones |
+| Lucide / Radix UI | Iconos y componentes accesibles |
 
-## Ejecución en local
+## Requisitos
 
-Requisitos: Node.js 18 o superior.
+- Node.js 18 o superior
+- npm 9 o superior
+
+## Instalación y uso
 
 ```bash
+# Clonar el repositorio
+git clone https://github.com/JheissonLoor/prevencion_embarazo_adolescente.git
+cd prevencion_embarazo_adolescente
+
+# Instalar dependencias
 npm install
+
+# Iniciar el entorno de desarrollo
 npm run dev
 ```
 
-El sitio queda disponible en http://localhost:8080.
+Scripts disponibles:
 
-Para generar la versión de producción:
-
-```bash
-npm run build
-```
+| Script | Descripción |
+| --- | --- |
+| `npm run dev` | Inicia el servidor de desarrollo en http://localhost:8080 |
+| `npm run build` | Genera la versión de producción en `dist/` |
+| `npm run preview` | Previsualiza localmente la versión de producción |
+| `npm run lint` | Analiza el código con ESLint |
 
 ## Despliegue
 
-El sitio está desplegado en Netlify. El repositorio incluye `netlify.toml`; el comando de construcción es `npm run build` y el directorio de publicación es `dist`.
+El proyecto está desplegado en Netlify e incluye el archivo `netlify.toml`. La configuración de publicación es:
+
+- Comando de construcción: `npm run build`
+- Directorio de publicación: `dist`
 
 ## Estructura del proyecto
 
 ```
 src/
-  main.tsx           Punto de entrada
-  App.tsx            Componente raíz con todas las secciones
+  main.tsx           Punto de entrada de la aplicación
+  App.tsx            Componente raíz que compone las secciones
   components/site/   Secciones del sitio (inicio, encuesta, métodos, etc.)
-  components/ui/     Componentes de interfaz
-  lib/content.ts     Textos editables del sitio
+  components/ui/     Componentes de interfaz reutilizables
+  lib/content.ts     Textos y datos editables del sitio
   hooks/             Hooks reutilizables
-  assets/            Imágenes
-  styles.css         Estilos y variables de diseño
+  assets/            Imágenes e ilustraciones
+  styles.css         Estilos globales y variables de diseño
 ```
 
 ## Edición del contenido
 
-Los textos del sitio se encuentran en `src/lib/content.ts`. Desde ese archivo se actualizan las secciones, los métodos, la encuesta y las fuentes sin modificar los componentes. Los contactos oficiales marcados como "Dato pendiente de verificación" deben reemplazarse por información oficial antes de su difusión.
+El contenido del sitio (secciones, métodos, encuesta y fuentes) está centralizado en `src/lib/content.ts`, lo que permite actualizar la información sin modificar los componentes. Los contactos oficiales marcados como "Dato pendiente de verificación" deben reemplazarse por información oficial antes de su difusión.
 
-## Equipo
+## Autoría
 
-Proyecto desarrollado por estudiantes de la Facultad de Salud de la Universidad Privada del Norte:
+Autor y desarrollo: **Jheisson Loor**
+
+Proyecto académico elaborado por estudiantes de la Facultad de Salud de la Universidad Privada del Norte:
 
 - López Romero Angie Ariana
 - Sánchez Capristano Anyeli
@@ -89,8 +119,8 @@ Proyecto desarrollado por estudiantes de la Facultad de Salud de la Universidad 
 
 ## Licencia
 
-Distribuido bajo la licencia MIT. Consulta el archivo LICENSE.
+Distribuido bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
 
-## Aviso
+---
 
 El contenido de este sitio es educativo y no reemplaza la orientación de un profesional de salud.
